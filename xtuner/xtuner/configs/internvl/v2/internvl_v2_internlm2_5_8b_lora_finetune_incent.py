@@ -21,7 +21,7 @@ from xtuner.utils import PROMPT_TEMPLATE
 path = '/root/InternVL/InternVL2_5-8B'
 
 # Data
-data_root = '/root/xtuner/mire_data/train'
+data_root = '/root/incent_internvl_2.5_8b/xtuner/mire_data/train'
 data_path = data_root + 'train_updated1.json'
 image_folder = data_root + 'images'
 prompt_template = PROMPT_TEMPLATE.internlm2_chat
