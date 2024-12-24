@@ -41,7 +41,7 @@ pip install lmdeploy==0.6.1 gradio==4.44.1 timm==1.0.9
 ## 2.1.准备基本配置文件
 
 ```Bash
-cd xtuner
+cd /root/incent_internvl_2.5_8b/xtuner
 conda activate xtuner-env  # 或者是你自命名的训练环境
 ```
 原始internvl的微调配置文件在路径`xtuner/xtuner/configs/internvl/v2`下
@@ -64,6 +64,8 @@ python /root/xtuner/xtuner/configs/internvl/v1_5/convert_to_official.py /root/xt
 # 4.开始部署预测
 
 ```Bash
+conda deactivate
+conda activate lmdeploy
 python lmdeploy1_test.py
 ```
 该代码运行结果是只有predict列，需要你用这一列直接替换之前提交过submit的一列。
