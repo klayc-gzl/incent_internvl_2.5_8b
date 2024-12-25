@@ -66,7 +66,7 @@ python /root/xtuner/xtuner/configs/internvl/v1_5/convert_to_official.py /root/xt
 ```Bash
 conda deactivate
 conda activate lmdeploy
-python lmdeploy1_test.py
+python lmdeploy_test.py
 ```
 该代码运行结果是只有predict列，需要你用这一列直接替换之前提交过submit的一列。
 
